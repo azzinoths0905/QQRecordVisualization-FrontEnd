@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>QQ聊天记录可视化</title>
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+    <link type="text/css" rel="stylesheet" href="vendor/css/bootstrap.min.css">
+
+</head>
+<body>
+<nav class="navbar navbar-dark bg-primary" style="height: 64px">
+    <a class="navbar-brand" href="#" >QQ聊天记录可视化</a>
+</nav>
+<div class="row">
+    <div class="col-3 bd-sidebar">
+        <div class="custom-file" id="upload">
+            <form enctype="multipart/form-data">
+                <input id="log_file" class="custom-file-input" type="file" name="log_file" accept=".txt">
+                <label class="custom-file-label" for="log_file" id="title">请选择聊天记录文件(.txt)</label>
+
+            </form>
+        </div>
+        <button id="wordcloud_selector" disabled style="width: 100%" type="button" class="btn btn-primary selector">词云</button>
+        <button style="width: 100%" disabled type="button" class="btn btn-secondary selector">Coming soon...</button>
+    </div>
+    <div class="col-9">
+        <div id="chart"></div>
+    </div>
+</div>
+<nav class="fixed-bottom copy-right">
+    <p>Copyright © Ron You</p>
+</nav>
+
+<div id="visual">
+    <span id="from"></span>
+
+
+</div>
+
+<script src="vendor/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/js/jquery-3.3.1.min.js"></script>
+<script src="vendor/js/echarts.min.js"></script>
+<script src="vendor/js/echarts-wordcloud.min.js"></script>
+<script src="js/wordCloud.js"></script>
+<script src="js/upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+#visual #from {
+    display: none;
+}
+
+#chart {
+    height: 800px;
+    width: 100%;
+    margin: 0;
+}
+
+#upload {
+    margin: 20px;
+}
+
+.selector {
+    margin: 10px 10px 10px 20px;
+}
+
+.copy-right > p {
+    margin: 0 auto;
+    text-align: center;
+}
